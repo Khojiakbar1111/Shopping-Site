@@ -6,7 +6,7 @@ import "./Card.css";
 const Card = ({ addCard, setAddCard }) => {
     // Get product from localStorage
     const [getProduct, setGetProduct] = useState(JSON.parse(localStorage.getItem("addCard")) || []);
-    
+
     useEffect(() => {
         localStorage.setItem("addCard", JSON.stringify(getProduct));
         setAddCard(getProduct);
@@ -14,15 +14,15 @@ const Card = ({ addCard, setAddCard }) => {
 
     // Increment
     const increment = (product) => {
-        const updatedCard = getProduct.map((item) => 
-        (item.id === product.id ? { ...item, count: item.count + 1 } : item));
+        const updatedCard = getProduct.map((item) =>
+            (item.id === product.id ? { ...item, count: item.count + 1 } : item));
         setGetProduct(updatedCard);
     };
 
     // Decrement
     const decrement = (product) => {
-        const updatedCard = getProduct.map((item) => 
-        (item.id === product.id && item.count > 1 ? { ...item, count: item.count - 1 } : item));
+        const updatedCard = getProduct.map((item) =>
+            (item.id === product.id && item.count > 1 ? { ...item, count: item.count - 1 } : item));
         setGetProduct(updatedCard);
     };
 
@@ -33,11 +33,7 @@ const Card = ({ addCard, setAddCard }) => {
     };
 
     // Total Price
-    let totalPrice = 0;
-    getProduct.forEach((item) => {
-        totalPrice += item.price * item.count
-    })
-
+    const totalPrice = getProduct.reduce((total, item) => total + item.price * item.count, 0);
     return (
         <div className="cart">
             <h3>#Card</h3>
