@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.shop{
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.shop h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #233232;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.shop p{
+    margin-top: 5px;
+    color:#8a8a8a;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.shop .container{
+    max-width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.shop .container .left-box{
+    width: 25%;
+}
+
+.shop .container .left-box .category{
+    border: 3px solid #f6f6f6;
+    width: 250px;
+}
+
+.shop .container .left-box .category .header{
+    max-width: 100%;
+    padding: 10px 20px;
+    background: #f6f6f6;
+}
+
+.shop .container .left-box .category .header h2{
+    font-size: 16px;
+    color: #233232;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.shop .container .left-box .category .box{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.shop .container .left-box .category .box ul{
+    max-width: 100%;
+}
+
+.shop .container .left-box .category .box ul li{
+    list-style: none;
+    margin-left: 10px;
+    text-transform: uppercase;
+    margin-top:5px ;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8a8a8a;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all ease .20s
+}
+
+.shop .container .left-box .category .box ul li:hover{
+   color: #232323;
+}
+
+.shop .container .left-box .banner{
+    width: 250px;
+    margin-top: 20px;
+}
+
+.shop .container .left-box .banner .img-box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.shop .container .right-box {
+    width: 74%;
+}
+
+.shop .container .right-box .banner{
+    max-width: 100%;
+}
+
+.shop .container .right-box .banner .img-box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.shop .container .right-box .product-box{
+    max-width:100%;
+    padding: 10px 10px;
+}
+
+.shop .container .right-box .product-box h2{
+    color: #232323;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.shop .container .right-box .product-box .product-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space;
+}
+
+.shop .container .right-box .product-box .product-container .box{
+    width: 320px;
+    height: 370px;
+    padding: 10px 45px;
+    overflow: hidden;
+    border: 4px solid #f6f6f6;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.shop .container .right-box .product-box .product-container .box .img-box{
+    display: flex;
+}
+
+.shop .container .right-box .product-box .product-container .box .img-box img{
+    width: 220px;
+    height: 220px;
+}
+
+.shop .container .right-box .product-box .product-container .box .img-box .icon-box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-left:40px;
+    transition: all ease .30s;
+}
+
+.shop .container .right-box .product-box .product-container .box .img-box .icon-box li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    color: #8a8a8a;
+    background: #fff;
+    cursor: pointer;
+    transition: all ease .30s;
+}
+
+.shop .container .right-box .product-box .product-container .box .img-box .icon-box li:hover{
+    color: white;
+    background: #cd1e71;
+}
+
+.shop .container .right-box .product-box .product-container .box:hover .img-box .icon-box{
+    margin-left: -20px;
+}
+
+.shop .container .right-box .product-box .product-container .box .detail{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.shop .container .right-box .product-box .product-container .box .detail h3{
+    text-align: center;
+    font-size: 18px;
+    color: #232323;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.shop .container .right-box .product-box .product-container .box .detail p{
+    margin-top: 5px;
+    color: #cd1e71;
+    text-align: center;
+    font-size: 16px;
+    font-weight:600;
+}
+
+.shop .container .right-box .product-box .product-container .box .detail button{
+    margin-top: 10px;
+    margin-left: 25%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: #232323;
+    background: #fed700;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease .30s;
+    border-radius: 5px;
+}
+
+.shop .container .right-box .product-box .product-container .box .detail button:hover{
+    color: #fed700;
+    background: #232323;
+}
+
+.product-detail{
+    width:900px;
+    height: 500px;
+    position: fixed;
+    top: 110px;
+    left: 290px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 3px;
+    border: 1px solid #f6f6f6;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.product-detail .close-btn{
+   float: right;
+   border: none;
+   outline: none;
+   background: none;
+   color: #cd1e71;
+   font-size: 30px;
+   cursor: pointer;
+}
+
+.product-detail .container{
+    width: 100%;
+    display: flex;
+}
+
+.product-detail .container .img-box{
+    padding: 20px 20px;
+    background: #f6f6f6;
+    border-radius: 10px;
+}
+
+.product-detail .container .img-box img{
+    width: 270px;
+    height: 270px;
+}
+
+.product-detail .container .info{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.product-detail .container .info h4{
+    color: #8a8a8a;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.product-detail .container .info h2{
+    margin-top: 30px;
+    color: #232323;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product-detail .container .info p{
+    margin-top: 10px;
+    color: #8a8a8a;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.product-detail .container .info h3{
+    margin-top: 10px;
+    font-size: 24px;
+    color: #cd1e71;
+}
+
+.product-detail .container .info button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    background: #cd1e71;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}

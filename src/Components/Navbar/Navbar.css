@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    width: 1529px;
+}
+
+.header .top-header {
+    max-width: 100%;
+    display: flex;
+    padding: 10px 10px;
+    background: #f6f7f8;
+}
+
+.header .top-header .icon {
+    margin-left: 20px;
+    color: #ababab;
+    font-size: 19px;
+}
+
+.header .top-header .info p {
+    margin-left: 10px;
+    color: #8a8a8a;
+}
+
+.header .middle-header{
+    display: flex;
+    padding: 20px 40px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.header .middle-header .logo img{
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.header .middle-header .search-box input{
+    padding: 10px 10px;
+    outline: none;
+    background: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 250px;
+    border: none;
+    border:1px solid #f6f7f8;
+}
+
+.header .middle-header .search-box button{
+    padding: 10px 10px ;
+    outline: none;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 50px;
+    background-color: #cd1e76;
+    color: white;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.header .middle-header .search-box button:hover{
+    background: #fed700;
+    color: #cd1e76;
+}
+
+.header .middle-header .user{
+    display: flex;
+    margin-right: 30px;
+}
+
+.header .middle-header .user .icon{
+    margin-right: 30px;
+}
+
+.header .middle-header .user .btn button{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    cursor: pointer;
+}
+
+.header .last-header{
+    width: 100%;
+    padding: 10px 10px;
+    background: #232323;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .last-header .user-profile{
+    display: flex;
+    margin-top: 10px;
+}
+
+.header .last-header .user-profile .icon{
+    padding: 10px 10px;
+    background: white;
+    border-radius: 10px;
+}
+
+.header .last-header .user-profile .info{
+    margin-left: 10px;
+}
+
+.header .last-header .user-profile .info h1{
+    color: #ababab;
+    font-size: 18px;
+}
+
+.header .last-header .user-profile .info p{
+    font-size: 14px;
+    color: #ababab;
+}
+
+.header .last-header .nav{
+    margin-top: 10px;
+}
+
+.header .last-header .nav ul{
+    display: flex;
+    margin-top: 5px;
+}
+
+.header .last-header .nav ul li{
+    list-style: none;
+}
+
+.header .last-header .nav ul .links{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.header .last-header .nav ul .links:hover{
+    color: #fed700;
+}
+
+.header .last-header .offer{
+    margin-right: 20px;
+    padding: 10px 20px;
+    background: #fed700;
+    border-radius: 10px;
+}
+
+.header .last-header .offer p{
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: #232323;
+    font-weight: 600;
+    font-size: 14px;
+}
